@@ -1,11 +1,12 @@
 #!ruby
 
 require 'fizzbuzz'
+exit Fizzbuzz::CLI.run(ARGV)
 
-unless ARGV.size == 1
-  puts "数値を1つ渡してください"
-  exit 1
-end
-
-n = ARGV.first.to_i
-puts Fizzbuzz.fizzbuzz(n)
+# unless ARGV.size == 1
+#   puts "数値を1つ渡してください"
+#   exit 1
+# end
+#
+# n = ARGV.first.to_i
+# puts Fizzbuzz.fizzbuzz(n)
