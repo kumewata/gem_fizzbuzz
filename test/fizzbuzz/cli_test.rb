@@ -1,5 +1,6 @@
 require "test_helper"
 
+
 class FizzbuzzCLITest < Minitest::Test
   def test_cli_3
     output = StringIO.new
@@ -12,6 +13,6 @@ class FizzbuzzCLITest < Minitest::Test
     output = StringIO.new
     status = Fizzbuzz::CLI.run([], output: output)
     assert_equal 1, status
-    assert_equal "数値を1つ渡してください", output.string
+    assert_equal "数値を1つ渡してください\n", output.string # \nの表記が記事に足りてない
   end
 end

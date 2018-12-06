@@ -3,3 +3,4 @@ require "minitest"
 require "minitest/autorun"
 
 require "fizzbuzz"
+require "fizzbuzz/cli" # ここ記事に足りてない場所
