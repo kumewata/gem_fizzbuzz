@@ -1,2 +1,11 @@
 #!ruby
-puts 'Hello, fizzbuzz'
+
+require 'fizzbuzz'
+
+unless ARGV.size == 1
+  puts "数値を1つ渡してください"
+  exit 1
+end
+
+n = ARGV.first.to_i
+puts Fizzbuzz.fizzbuzz(n)
